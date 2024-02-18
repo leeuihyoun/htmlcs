@@ -1,0 +1,47 @@
+body{
+    margin: 0;
+    background: #f4f5be;
+}
+div, input , textarea{
+    box-sizing: border-box;
+}
+.component-signup{
+   border: 1px solid gray;
+    background: rgb(212, 240, 218);
+    width: 80%;
+    max-width: 600px;
+    min-width: 400px;
+    margin: auto;
+    padding: 30px;
+}
+
+.component-date input[type=text]{
+    width: 60px;
+    color: gray;
+}
+.component-signup input{
+    padding: 5px;
+    width: 200px;
+}
+#monthSelect{
+    color: gray;
+    padding: 5px;
+}
+.component-header{
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    font-weight:900;
+    
+}
+.component-ga input{
+    width: 20px;
+}
+#yearSelect{
+    padding: 5px;
+    color: gray;
+}
+#daySelect{
+    padding: 5px;
+    color: gray;
+}

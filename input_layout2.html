@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/input_layout2.css">
+    <title>Document</title>
+</head>
+<body>
+   <br>
+   <br>
+    <div class="component-signup"> 
+        
+        <header class="component-header">회원가입</header>
+        <form>
+            <div class="component-id">
+                <p>아이디</p>
+                <input type="email" placeholder="example@example.com">
+            </div>
+            <div class="component-pw">
+                <p>비밀번호</p>
+                <input type="password">
+            </div>
+            <div class="component-name">
+                <p>이름</p>
+                <input type="text">
+            </div>
+            <div class="component-date">
+                <p>생년월일</p>
+                <select id="yearSelect">
+                    <option value="">년(4자)</option>
+                  </select>
+                  
+                  <script>
+                    
+                    var currentYear = new Date().getFullYear();
+                    
+                    for (var year = 1950; year <= currentYear; year++) {
+                      var option = document.createElement("option");
+                      option.text = year;
+                      option.value = year;
+                      document.getElementById("yearSelect").appendChild(option);
+                    }
+                  </script>
+                    <select id="monthSelect">
+                        <option value="">월</option>
+                    </select>
+                  <script>
+                    for (var month = 1; month <= 12; month++){
+                        var option = document.createElement("option");
+                        option.text = month;
+                        option.value = month;
+                        
+                        document.getElementById("monthSelect").appendChild(option);
+
+                    }
+
+                  </script>
+                  <select id="daySelect">
+                    <option value="">일</option>
+                  </select>
+                  <script>
+                    for (var day = 1; day <=31; day++){
+                        var option = document.createElement("option");
+                        option.text = day;
+                        option.value = day;
+                        
+                        document.getElementById("daySelect").appendChild(option);
+                    }
+                  </script>
+                
+            </div>
+            <div class="component-ga">
+                <label>성별</label><br>
+                <input type="radio" id="maleRadio" name="gender">
+                <label for="maleRadio">남자</label>
+                <input type="radio" id="femaleRadio" name="gender">
+                <label for="femaleRadio">여자</label>
+                <input type="radio" id="noneRadio" name="gender">
+                <label for="noneRadio">선택안함</label>
+            </div>
+
+            <div>
+                <p>휴대전화</p>
+                <input type="text">
+            </div>
+
+        </form>
+
+    </div>
+    
+</body>
+</html>

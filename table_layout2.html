@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        .cart-table img{
+            width: 80px;
+            height: 80px;
+        }
+        .component-table{
+            padding: 30px;
+            width: 700px;
+            margin: auto; /*박스 중앙 정렬*/
+        }
+        .cart-table{
+            border-collapse: collapse;
+           
+           
+        }
+        .bt{
+            padding: 10px 50px;
+            border: 1px solid rgb(146, 146, 146);
+            background-color: white;
+            cursor: pointer;
+
+        }
+        .bu{
+            padding: 10px 50px;
+            background-color: white;
+            border: 1px solid greenyellow;
+            cursor: pointer;
+
+        }
+        .pr{
+            text-align: right;
+            width: 340px;
+        }
+      
+
+    </style>
+</head>
+<body>
+    
+    <div class="component-table">
+        <table class="cart-table">
+            <tr>
+                <td rowspan="2"><img src="./cat.jpg"></td>
+                <td colspan="2">제품명</td>
+                <td><input type="checkbox"></td>
+                
+                
+            </tr>
+            <tr>
+                <td colspan="2">
+                    가격
+                </td>
+                
+              
+            </tr>
+            <tr>
+                <td>
+                    옵션
+                </td>
+                <td colspan="2">
+                    
+                </td>
+            </tr>
+            <tr>
+                <td>상품금액</td>
+                <td colspan="2" class="pr">0000원</td>
+                
+            </tr>
+            <tr>
+                <td>배송비</td>
+                <td colspan="2" class="pr">0000원</td>
+            </tr>
+            <table>
+                <tr>
+                <td><button type="button" class="bt">삭제</button></td>
+                <td><button type="button" class="bt">주문수정</button></td>
+                <td><button type="button" class="bu">주문</button></td>
+                </tr>
+            </table>
+            <hr>
+        </table>
+        <table class="cart-table">
+            <tr>
+                <td rowspan="2"><img src="./cat.jpg"></td>
+                <td colspan="2">제품명</td>
+                <td><input type="checkbox"></td>
+                
+            </tr>
+            <tr>
+                <td colspan="2">
+                    가격
+                </td>
+              
+            </tr>
+            <tr>
+                <td>
+                    옵션
+                </td>
+                <td colspan="2">
+                    
+                </td>
+            </tr>
+            <tr>
+                <td>상품금액</td>
+                <td colspan="2" class="pr">0000원</td>
+                
+            </tr>
+            <tr>
+                <td>배송비</td>
+                <td colspan="2" class="pr">0000원</td>
+            </tr>
+            <table>
+                <tr>
+                <td><button type="button" class="bt">삭제</button></td>
+                <td><button type="button" class="bt">주문수정</button></td>
+                <td><button type="button" class="bu">주문</button></td>
+                </tr>
+            </table>
+            <hr>
+            <table>  
+                <tr>
+                <td><h3>총 금액</h3></td>
+                <td colspan="2" class="pr"><h3>0000원</h3></td>
+                </tr>
+            </table>
+          
+        </table>
+   
+    </div>
+    
+        
+    
+    
+</body>
+</html>

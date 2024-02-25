@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>애니메이션 효과</title>
+    <style>
+        .box{
+            position: relative;
+            background-color: yellowgreen;
+            width: 200px;
+            height: 70px;
+            text-align: center;
+        }
+        .box:hover{
+            background-color: green;
+        }
+        .box:hover .text{
+            opacity: 1;
+            top: 40%
+        }
+        .text{
+            position: absolute; /*relative인 부모의 위치를 기준*/
+            margin: 0;
+            top:70%;
+            opacity: 0;
+            transition: all 1s;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        Hello World!
+        <p class="text">Nice to meet you</p>
+    </div>
+</body>
+</html>
